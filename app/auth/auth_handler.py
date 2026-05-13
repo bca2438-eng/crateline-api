@@ -1,8 +1,9 @@
+import os
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
 import bcrypt
 
-SECRET_KEY = "changethisinsecretkey123"
+SECRET_KEY = os.getenv("SECRET_KEY", "crateline-super-secret-key-2025")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
