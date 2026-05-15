@@ -14,6 +14,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:3001",
+        "http://localhost:8000",
         "https://crateline.netlify.app",
         "https://*.netlify.app"
     ],
